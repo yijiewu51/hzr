@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HZR和WYJ的重要日期</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <h1 class="title">HZR和WYJ的重要日期</h1>
+    </header>
+
+    <div class="share-banner" id="share-banner" style="display: none;">
+      <p>两人用同一个链接，才能看到、编辑同一份日期。</p>
+      <button type="button" class="add-btn" id="share-generate-btn">生成共享链接</button>
+    </div>
+    <div class="share-link-bar" id="share-link-bar" style="display: none;">
+      <span class="share-link-label">共享链接（复制后发给她）：</span>
+      <input type="text" class="share-link-input" id="share-link-input" readonly />
+      <button type="button" class="share-copy-btn" id="share-copy-btn">复制</button>
+    </div>
+
+    <main class="main">
+      <section class="card card-add" id="add-section">
+        <h2 class="card-title" id="add-form-title">添加时间点</h2>
+        <form class="add-form" id="add-form">
+          <input type="hidden" id="edit-id" value="" />
+          <input type="text" class="add-input" id="add-title" placeholder="名称" required />
+          <input type="date" class="add-input" id="add-date" required />
+          <div class="add-type">
+            <label class="add-type-option"><input type="radio" name="add-type" value="纪念日" /> 纪念日</label>
+            <label class="add-type-option"><input type="radio" name="add-type" value="未来" checked /> 未来</label>
+          </div>
+          <button type="submit" class="add-btn" id="add-submit-btn">添加</button>
+        </form>
+      </section>
+
+      <div class="categories-container">
+        <section class="category-section" id="section-anniversary">
+          <h3 class="category-title">纪念日</h3>
+          <div class="user-cards" id="user-cards-anniversary"></div>
+        </section>
+        <section class="category-section" id="section-future">
+          <h3 class="category-title">未来</h3>
+          <div class="user-cards" id="user-cards-future"></div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

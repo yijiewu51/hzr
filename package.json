@@ -1,0 +1,7 @@
+{
+  "name": "hzr-dates",
+  "private": true,
+  "dependencies": {
+    "@vercel/kv": "^0.2.0"
+  }
+}
