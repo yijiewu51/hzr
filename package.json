@@ -1,6 +1,9 @@
 {
   "name": "hzr-dates",
   "private": true,
+  "scripts": {
+    "build": "echo ok"
+  },
   "dependencies": {
     "@vercel/kv": "^0.2.0"
   }
